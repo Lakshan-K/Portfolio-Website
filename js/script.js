@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const navUl = document.querySelector('nav ul');
 
+
     // Toggle menu
     menuIcon.addEventListener('click', () => {
         navUl.classList.toggle('show-menu');
     });
 
+    
     // Smooth scrolling
     document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
